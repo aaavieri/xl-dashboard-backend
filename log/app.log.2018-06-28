@@ -1,0 +1,302 @@
+{"level":"info","message":"\u001b[0mPOST /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m119824.827 ms - 1198\u001b[0m\n","timestamp":"2018-06-28T09:56:10.629Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m35898.618 ms - 1198\u001b[0m\n","timestamp":"2018-06-28T09:58:39.275Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m15596.856 ms - 41\u001b[0m\n","timestamp":"2018-06-28T10:00:45.997Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m1318.037 ms - 41\u001b[0m\n","timestamp":"2018-06-28T10:02:41.176Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m2826.530 ms - 41\u001b[0m\n","timestamp":"2018-06-28T10:03:19.512Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m51627.820 ms - 41\u001b[0m\n","timestamp":"2018-06-28T10:04:54.742Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m13004.327 ms - 41\u001b[0m\n","timestamp":"2018-06-28T10:05:43.720Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:05:56.463Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T10:05:56.465Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T10:05:56.479Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:06:15.492Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:07:01.695Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:09:36.501Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:11:28.322Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T10:11:29.295Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T10:12:07.547Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:13:13.434Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T10:13:15.663Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:15:14.097Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T10:15:14.099Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:16:28.779Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T10:16:28.781Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T10:16:52.454Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T10:17:12.680Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T10:17:18.851Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m57636.102 ms - 47\u001b[0m\n","timestamp":"2018-06-28T10:19:17.832Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m38957.640 ms - 47\u001b[0m\n","timestamp":"2018-06-28T10:20:25.652Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m4844.806 ms - 47\u001b[0m\n","timestamp":"2018-06-28T10:20:36.560Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m124.736 ms - 47\u001b[0m\n","timestamp":"2018-06-28T10:21:50.164Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m7.216 ms - 74\u001b[0m\n","timestamp":"2018-06-28T10:22:12.818Z"}
+{"level":"info","message":"\u001b[0mGET /users/login?userId=heyu&password=heyu \u001b[31m500 \u001b[0m81833.096 ms - 74\u001b[0m\n","timestamp":"2018-06-28T10:25:04.528Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[33m404 \u001b[0m201.840 ms - 50\u001b[0m\n","timestamp":"2018-06-28T10:26:44.939Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T10:28:25.888Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T10:28:25.890Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T10:28:27.688Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T10:28:27.689Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T10:28:27.689Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-06-28T10:29:23.728Z"}
+{"level":"info","message":"\u001b[0mGET /custom.html \u001b[32m200 \u001b[0m13.494 ms - 4146\u001b[0m\n","timestamp":"2018-06-28T12:06:47.227Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/custom.caa6b31d.css \u001b[32m200 \u001b[0m9.643 ms - 29511\u001b[0m\n","timestamp":"2018-06-28T12:06:47.328Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/custom.09942176.js \u001b[32m200 \u001b[0m10.515 ms - 50799\u001b[0m\n","timestamp":"2018-06-28T12:06:47.330Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/chunk-common.91430428.js \u001b[32m200 \u001b[0m10.858 ms - 110153\u001b[0m\n","timestamp":"2018-06-28T12:06:47.339Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/chunk-vendors.fb5f224a.css \u001b[32m200 \u001b[0m9.447 ms - 204527\u001b[0m\n","timestamp":"2018-06-28T12:06:47.340Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/chunk-common.34321e89.css \u001b[32m200 \u001b[0m10.260 ms - 684128\u001b[0m\n","timestamp":"2018-06-28T12:06:47.348Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/chunk-vendors.6b25dbd9.js \u001b[32m200 \u001b[0m12.617 ms - 2374726\u001b[0m\n","timestamp":"2018-06-28T12:06:48.021Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/10.5fb7e82e.css \u001b[32m200 \u001b[0m4.460 ms - 66\u001b[0m\n","timestamp":"2018-06-28T12:06:48.024Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/11.7c49effb.css \u001b[32m200 \u001b[0m6.100 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.025Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/12.44d4151d.css \u001b[32m200 \u001b[0m6.719 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.026Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/13.e2798a0b.css \u001b[32m200 \u001b[0m6.824 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.027Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/14.ef93ee87.css \u001b[32m200 \u001b[0m6.938 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.027Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/16.1a9201d4.css \u001b[32m200 \u001b[0m4.074 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.041Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/15.870812e7.css \u001b[32m200 \u001b[0m5.527 ms - 52\u001b[0m\n","timestamp":"2018-06-28T12:06:48.042Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/17.ef1c54f4.css \u001b[32m200 \u001b[0m5.439 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.043Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/18.3da46f27.css \u001b[32m200 \u001b[0m5.002 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.044Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/19.a0ed8fe5.css \u001b[32m200 \u001b[0m4.773 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.045Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/20.470116be.css \u001b[32m200 \u001b[0m4.181 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.054Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/21.a13e3e85.css \u001b[32m200 \u001b[0m4.425 ms - 60\u001b[0m\n","timestamp":"2018-06-28T12:06:48.056Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/22.28e96d27.css \u001b[32m200 \u001b[0m4.520 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.056Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/23.91f0ddfd.css \u001b[32m200 \u001b[0m5.006 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.057Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/24.389c33bc.css \u001b[32m200 \u001b[0m4.942 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.059Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/32.8f00ca43.css \u001b[32m200 \u001b[0m5.329 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.072Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/33.217a8bfb.css \u001b[32m200 \u001b[0m4.811 ms - 366\u001b[0m\n","timestamp":"2018-06-28T12:06:48.073Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/34.d638a2af.css \u001b[32m200 \u001b[0m5.059 ms - 58\u001b[0m\n","timestamp":"2018-06-28T12:06:48.076Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/35.b445fcf1.css \u001b[32m200 \u001b[0m5.999 ms - 68\u001b[0m\n","timestamp":"2018-06-28T12:06:48.077Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/38.e2e94add.css \u001b[32m200 \u001b[0m6.629 ms - 82\u001b[0m\n","timestamp":"2018-06-28T12:06:48.078Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/4.6be11b60.css \u001b[32m200 \u001b[0m3.218 ms - 12460\u001b[0m\n","timestamp":"2018-06-28T12:06:48.082Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/5.f32c5d84.css \u001b[32m200 \u001b[0m2.082 ms - 29212\u001b[0m\n","timestamp":"2018-06-28T12:06:48.083Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/6.d7743af7.css \u001b[32m200 \u001b[0m5.011 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:06:48.115Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/7.7aadfeda.css \u001b[32m200 \u001b[0m5.232 ms - 278\u001b[0m\n","timestamp":"2018-06-28T12:06:48.116Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/8.3dd44377.css \u001b[32m200 \u001b[0m3.096 ms - 21\u001b[0m\n","timestamp":"2018-06-28T12:06:48.118Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/9.82be2f11.css \u001b[32m200 \u001b[0m6.711 ms - 18\u001b[0m\n","timestamp":"2018-06-28T12:06:48.128Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/10.9569f94a.js \u001b[32m200 \u001b[0m3.706 ms - 5300\u001b[0m\n","timestamp":"2018-06-28T12:06:48.130Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/11.b92324a7.js \u001b[32m200 \u001b[0m4.021 ms - 13508\u001b[0m\n","timestamp":"2018-06-28T12:06:48.131Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/12.d5748638.js \u001b[32m200 \u001b[0m4.306 ms - 7649\u001b[0m\n","timestamp":"2018-06-28T12:06:48.132Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/1.66c06288.js \u001b[32m200 \u001b[0m3.837 ms - 70114\u001b[0m\n","timestamp":"2018-06-28T12:06:48.133Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/13.e1bf2a2a.js \u001b[32m200 \u001b[0m1.044 ms - 4225\u001b[0m\n","timestamp":"2018-06-28T12:06:48.135Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/15.2d09b385.js \u001b[32m200 \u001b[0m3.466 ms - 10454\u001b[0m\n","timestamp":"2018-06-28T12:06:48.145Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/16.ffbaad11.js \u001b[32m200 \u001b[0m2.891 ms - 8874\u001b[0m\n","timestamp":"2018-06-28T12:06:48.146Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/17.c60464d2.js \u001b[32m200 \u001b[0m3.788 ms - 8293\u001b[0m\n","timestamp":"2018-06-28T12:06:48.148Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/14.32894f84.js \u001b[32m200 \u001b[0m3.622 ms - 22658\u001b[0m\n","timestamp":"2018-06-28T12:06:48.149Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/18.750f044e.js \u001b[32m200 \u001b[0m2.245 ms - 14122\u001b[0m\n","timestamp":"2018-06-28T12:06:48.153Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/19.496974db.js \u001b[32m200 \u001b[0m6.779 ms - 846\u001b[0m\n","timestamp":"2018-06-28T12:06:48.168Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/20.2ca2c9d0.js \u001b[32m200 \u001b[0m5.301 ms - 3098\u001b[0m\n","timestamp":"2018-06-28T12:06:48.170Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/22.3ded835e.js \u001b[32m200 \u001b[0m6.113 ms - 3817\u001b[0m\n","timestamp":"2018-06-28T12:06:48.172Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/21.bff31064.js \u001b[32m200 \u001b[0m6.526 ms - 1596\u001b[0m\n","timestamp":"2018-06-28T12:06:48.173Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/23.1f42ce87.js \u001b[32m200 \u001b[0m6.484 ms - 2787\u001b[0m\n","timestamp":"2018-06-28T12:06:48.174Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/24.7d87fa4f.js \u001b[32m200 \u001b[0m3.786 ms - 5417\u001b[0m\n","timestamp":"2018-06-28T12:06:48.181Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/25.271f5f16.js \u001b[32m200 \u001b[0m4.526 ms - 142509\u001b[0m\n","timestamp":"2018-06-28T12:06:48.184Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/33.70b45b0e.js \u001b[32m200 \u001b[0m2.198 ms - 8011\u001b[0m\n","timestamp":"2018-06-28T12:06:48.190Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/32.b9069367.js \u001b[32m200 \u001b[0m4.078 ms - 10454\u001b[0m\n","timestamp":"2018-06-28T12:06:48.191Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/26.19d92394.js \u001b[32m200 \u001b[0m4.678 ms - 135276\u001b[0m\n","timestamp":"2018-06-28T12:06:48.192Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/34.ae61eb02.js \u001b[32m200 \u001b[0m2.358 ms - 3295\u001b[0m\n","timestamp":"2018-06-28T12:06:48.200Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/35.d1a29940.js \u001b[32m200 \u001b[0m2.981 ms - 4977\u001b[0m\n","timestamp":"2018-06-28T12:06:48.201Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/4.5f88796b.js \u001b[32m200 \u001b[0m3.654 ms - 33585\u001b[0m\n","timestamp":"2018-06-28T12:06:48.209Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/5.000fea6f.js \u001b[32m200 \u001b[0m7.309 ms - 113162\u001b[0m\n","timestamp":"2018-06-28T12:06:48.217Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/6.a12b177e.js \u001b[32m200 \u001b[0m7.507 ms - 5009\u001b[0m\n","timestamp":"2018-06-28T12:06:48.219Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/7.265bc4dc.js \u001b[32m200 \u001b[0m8.803 ms - 1196\u001b[0m\n","timestamp":"2018-06-28T12:06:48.221Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/8.c30aae59.js \u001b[32m200 \u001b[0m3.383 ms - 692\u001b[0m\n","timestamp":"2018-06-28T12:06:48.228Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/38.99f18502.js \u001b[32m200 \u001b[0m3.963 ms - 571659\u001b[0m\n","timestamp":"2018-06-28T12:06:48.230Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/9.f9358447.js \u001b[32m200 \u001b[0m2.365 ms - 4668\u001b[0m\n","timestamp":"2018-06-28T12:06:48.236Z"}
+{"level":"info","message":"\u001b[0mGET /src/assets/img/login-cloud.png \u001b[33m404 \u001b[0m3.778 ms - 50\u001b[0m\n","timestamp":"2018-06-28T12:06:48.780Z"}
+{"level":"info","message":"\u001b[0mGET /favicon.png \u001b[32m200 \u001b[0m1.380 ms - 14053\u001b[0m\n","timestamp":"2018-06-28T12:06:49.064Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T12:12:05.817Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T12:12:05.817Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-06-28T12:12:05.826Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/chunk-vendors.fb5f224a.css \u001b[36m304 \u001b[0m4.931 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:12:05.834Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/chunk-common.34321e89.css \u001b[36m304 \u001b[0m7.047 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:12:05.835Z"}
+{"level":"info","message":"\u001b[0mGET /assets/css/custom.caa6b31d.css \u001b[36m304 \u001b[0m6.995 ms - -\u001b[0m\n","timestamp":"2018-06-28T12:12:05.836Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T12:12:05.844Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T12:12:05.845Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T12:12:05.845Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/custom.09942176.js.map \u001b[32m200 \u001b[0m18.306 ms - 216906\u001b[0m\n","timestamp":"2018-06-28T12:12:05.889Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/chunk-common.91430428.js.map \u001b[32m200 \u001b[0m18.098 ms - 497957\u001b[0m\n","timestamp":"2018-06-28T12:12:05.902Z"}
+{"level":"info","message":"\u001b[0mGET /assets/js/chunk-vendors.6b25dbd9.js.map \u001b[32m200 \u001b[0m18.018 ms - 8505910\u001b[0m\n","timestamp":"2018-06-28T12:12:06.277Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T12:12:13.816Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T12:12:13.817Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T12:12:13.819Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T12:12:13.819Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T12:12:13.819Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-06-28T12:12:16.231Z"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/login \u001b[32m200 \u001b[0m1.163 ms - 4\u001b[0m\n","timestamp":"2018-06-28T12:20:00.769Z"}
+{"level":"info","message":"\u001b[0mOPTIONS /users/login \u001b[32m200 \u001b[0m0.509 ms - 4\u001b[0m\n","timestamp":"2018-06-28T13:45:35.204Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T13:50:49.381Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T13:50:49.381Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-06-28T13:50:49.382Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T13:50:49.382Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T13:50:49.383Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T13:50:49.383Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T13:51:26.302Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T13:51:26.304Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-06-28T13:51:26.326Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T13:51:26.331Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T13:51:26.332Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T13:51:26.332Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T13:51:38.587Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T13:51:38.588Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T13:51:38.591Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T13:51:38.592Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T13:51:38.592Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-06-28T13:54:58.788Z"}
+{"level":"info","message":"execute sql: select * from t_user","timestamp":"2018-06-28T13:57:42.742Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T13:57:42.744Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T13:57:42.758Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T13:57:42.759Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T13:57:42.759Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-06-28T14:02:36.437Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:15:04.187Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T14:15:04.189Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:15:04.200Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:15:04.201Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:15:04.201Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:16:02.851Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T14:16:02.853Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:16:02.865Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:16:02.865Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:16:02.866Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m41.885 ms - 83\u001b[0m\n","timestamp":"2018-06-28T14:16:02.876Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:16:37.030Z"}
+{"level":"info","message":"params: ","timestamp":"2018-06-28T14:16:37.030Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:16:37.031Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:16:37.031Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:16:37.032Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m124288.986 ms - 83\u001b[0m\n","timestamp":"2018-06-28T14:18:43.190Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:20:06.505Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T14:20:06.505Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:20:06.506Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:20:06.506Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:20:06.507Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m32015.389 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:20:39.903Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:20:48.116Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T14:20:48.116Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:20:48.117Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:20:48.118Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:20:48.118Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.443 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:20:48.120Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:20:51.734Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T14:20:51.734Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:20:51.735Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:20:51.735Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:20:51.735Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.228 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:20:51.737Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:21:05.687Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T14:21:05.688Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:21:05.688Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:21:05.689Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:21:05.689Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m2.651 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:21:05.690Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:22:25.141Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T14:22:25.141Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:22:25.143Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:22:25.143Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:22:25.143Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m4.850 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:22:25.146Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:23:15.191Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T14:23:15.191Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:23:15.191Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:23:15.192Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:23:15.192Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m2.552 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:23:15.193Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:29:36.004Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T14:29:36.005Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:29:36.005Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:29:36.005Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:29:36.006Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.064 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:29:36.007Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m1.456 ms - 50\u001b[0m\n","timestamp":"2018-06-28T14:45:14.976Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.706 ms - 50\u001b[0m\n","timestamp":"2018-06-28T14:48:17.568Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m4.961 ms - 86\u001b[0m\n","timestamp":"2018-06-28T14:49:04.480Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.710 ms - 86\u001b[0m\n","timestamp":"2018-06-28T14:50:12.067Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.496 ms - 86\u001b[0m\n","timestamp":"2018-06-28T14:50:25.643Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T14:50:37.482Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T14:50:37.482Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T14:50:37.491Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T14:50:37.492Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T14:50:37.493Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m31.963 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:50:37.499Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.589 ms - 42\u001b[0m\n","timestamp":"2018-06-28T14:50:37.567Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T15:01:20.832Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T15:01:20.832Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T15:01:20.834Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T15:01:20.834Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T15:01:20.834Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m4.416 ms - 42\u001b[0m\n","timestamp":"2018-06-28T15:01:20.836Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.397 ms - 42\u001b[0m\n","timestamp":"2018-06-28T15:01:20.948Z"}
+{"level":"info","message":"\u001b[0mPOST /users/logout \u001b[32m200 \u001b[0m0.557 ms - 42\u001b[0m\n","timestamp":"2018-06-28T15:01:29.449Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T15:02:07.734Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T15:02:07.734Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T15:02:07.735Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T15:02:07.735Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T15:02:07.735Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.612 ms - 42\u001b[0m\n","timestamp":"2018-06-28T15:02:07.737Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.365 ms - 42\u001b[0m\n","timestamp":"2018-06-28T15:02:07.842Z"}
+{"level":"info","message":"\u001b[0mPOST /users/logout \u001b[32m200 \u001b[0m0.378 ms - 42\u001b[0m\n","timestamp":"2018-06-28T15:02:09.800Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.394 ms - 86\u001b[0m\n","timestamp":"2018-06-28T15:02:18.663Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:41:34.202Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:41:34.202Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:41:34.203Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:41:34.204Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:41:34.204Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m5.317 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:41:34.207Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:45:33.652Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:45:33.653Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:45:33.653Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:45:33.653Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:45:33.653Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.562 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:45:33.655Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:45:36.226Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:45:36.226Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:45:36.227Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:45:36.228Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:45:36.228Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m6.110 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:45:36.229Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:45:44.246Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:45:44.247Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:45:44.248Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:45:44.248Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:45:44.248Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.617 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:45:44.250Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:46:08.023Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:46:08.023Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:46:08.024Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:46:08.024Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:46:08.024Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m2.720 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:46:08.026Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:47:27.456Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:47:27.456Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:47:27.457Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:47:27.457Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:47:27.457Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m2.831 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:47:27.458Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:47:39.142Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:47:39.142Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:47:39.143Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:47:39.143Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:47:39.143Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.035 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:47:39.145Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:47:44.056Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:47:44.057Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:47:44.058Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:47:44.058Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:47:44.058Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.848 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:47:44.060Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:50:01.624Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:50:01.624Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:50:01.625Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:50:01.625Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:50:01.625Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m2.831 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:50:01.627Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T16:50:21.956Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T16:50:21.957Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T16:50:21.957Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T16:50:21.958Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T16:50:21.958Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m3.167 ms - 83\u001b[0m\n","timestamp":"2018-06-28T16:50:21.960Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user","timestamp":"2018-06-28T17:00:29.468Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-06-28T17:00:29.468Z"}
+{"level":"info","message":"start sql","timestamp":"2018-06-28T17:00:29.468Z"}
+{"level":"info","message":"end sql","timestamp":"2018-06-28T17:00:29.469Z"}
+{"level":"info","message":"source released","timestamp":"2018-06-28T17:00:29.469Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m2.937 ms - 42\u001b[0m\n","timestamp":"2018-06-28T17:00:29.470Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.496 ms - 42\u001b[0m\n","timestamp":"2018-06-28T17:00:29.654Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.467 ms - 42\u001b[0m\n","timestamp":"2018-06-28T17:01:21.757Z"}

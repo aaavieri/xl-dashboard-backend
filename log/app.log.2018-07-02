@@ -1,0 +1,788 @@
+{"level":"info","message":"start transaction","timestamp":"2018-07-02T03:16:34.144Z"}
+{"level":"info","message":"end transaction","timestamp":"2018-07-02T03:16:34.146Z"}
+{"level":"info","message":"execute sql: select sequence_number, row_version from t_sequence where table_name = ? and prefix = ? and del_flag = false for update","timestamp":"2018-07-02T03:16:34.147Z"}
+{"level":"info","message":"params: t_medical,FX","timestamp":"2018-07-02T03:16:34.147Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:34.148Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:34.148Z"}
+{"level":"info","message":"execute sql: update t_sequence set sequence_number = sequence_number + 1, row_version = row_version + 1 where table_name = ? and prefix = ? and del_flag = false and row_version = ?","timestamp":"2018-07-02T03:16:34.184Z"}
+{"level":"info","message":"params: t_medical,FX,4","timestamp":"2018-07-02T03:16:34.184Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:34.185Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:34.185Z"}
+{"level":"info","message":"\u001b[0mGET /api/getSerial/1/FX \u001b[32m200 \u001b[0m171.307 ms - 45\u001b[0m\n","timestamp":"2018-07-02T03:16:34.310Z"}
+{"level":"info","message":"start transaction","timestamp":"2018-07-02T03:16:36.249Z"}
+{"level":"info","message":"end transaction","timestamp":"2018-07-02T03:16:36.250Z"}
+{"level":"info","message":"execute sql: select sequence_number, row_version from t_sequence where table_name = ? and prefix = ? and del_flag = false for update","timestamp":"2018-07-02T03:16:36.250Z"}
+{"level":"info","message":"params: t_medical,FX","timestamp":"2018-07-02T03:16:36.250Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:36.250Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:36.251Z"}
+{"level":"info","message":"execute sql: update t_sequence set sequence_number = sequence_number + 1, row_version = row_version + 1 where table_name = ? and prefix = ? and del_flag = false and row_version = ?","timestamp":"2018-07-02T03:16:36.251Z"}
+{"level":"info","message":"params: t_medical,FX,5","timestamp":"2018-07-02T03:16:36.252Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:36.252Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:36.252Z"}
+{"level":"info","message":"\u001b[0mGET /api/getSerial/1/FX \u001b[32m200 \u001b[0m7.455 ms - 45\u001b[0m\n","timestamp":"2018-07-02T03:16:36.254Z"}
+{"level":"info","message":"start transaction","timestamp":"2018-07-02T03:16:37.327Z"}
+{"level":"info","message":"end transaction","timestamp":"2018-07-02T03:16:37.327Z"}
+{"level":"info","message":"execute sql: select sequence_number, row_version from t_sequence where table_name = ? and prefix = ? and del_flag = false for update","timestamp":"2018-07-02T03:16:37.328Z"}
+{"level":"info","message":"params: t_medical,FX","timestamp":"2018-07-02T03:16:37.329Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:37.329Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:37.329Z"}
+{"level":"info","message":"execute sql: update t_sequence set sequence_number = sequence_number + 1, row_version = row_version + 1 where table_name = ? and prefix = ? and del_flag = false and row_version = ?","timestamp":"2018-07-02T03:16:37.330Z"}
+{"level":"info","message":"params: t_medical,FX,6","timestamp":"2018-07-02T03:16:37.330Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:37.330Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:37.331Z"}
+{"level":"info","message":"\u001b[0mGET /api/getSerial/1/FX \u001b[32m200 \u001b[0m7.021 ms - 45\u001b[0m\n","timestamp":"2018-07-02T03:16:37.332Z"}
+{"level":"info","message":"start transaction","timestamp":"2018-07-02T03:16:38.551Z"}
+{"level":"info","message":"end transaction","timestamp":"2018-07-02T03:16:38.551Z"}
+{"level":"info","message":"execute sql: select sequence_number, row_version from t_sequence where table_name = ? and prefix = ? and del_flag = false for update","timestamp":"2018-07-02T03:16:38.552Z"}
+{"level":"info","message":"params: t_medical,FX","timestamp":"2018-07-02T03:16:38.552Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:38.552Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:38.552Z"}
+{"level":"info","message":"execute sql: update t_sequence set sequence_number = sequence_number + 1, row_version = row_version + 1 where table_name = ? and prefix = ? and del_flag = false and row_version = ?","timestamp":"2018-07-02T03:16:38.553Z"}
+{"level":"info","message":"params: t_medical,FX,7","timestamp":"2018-07-02T03:16:38.553Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:38.554Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:38.554Z"}
+{"level":"info","message":"\u001b[0mGET /api/getSerial/1/FX \u001b[32m200 \u001b[0m5.802 ms - 45\u001b[0m\n","timestamp":"2018-07-02T03:16:38.555Z"}
+{"level":"info","message":"start transaction","timestamp":"2018-07-02T03:16:39.963Z"}
+{"level":"info","message":"end transaction","timestamp":"2018-07-02T03:16:39.963Z"}
+{"level":"info","message":"execute sql: select sequence_number, row_version from t_sequence where table_name = ? and prefix = ? and del_flag = false for update","timestamp":"2018-07-02T03:16:39.964Z"}
+{"level":"info","message":"params: t_medical,FX","timestamp":"2018-07-02T03:16:39.964Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:39.964Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:39.964Z"}
+{"level":"info","message":"execute sql: update t_sequence set sequence_number = sequence_number + 1, row_version = row_version + 1 where table_name = ? and prefix = ? and del_flag = false and row_version = ?","timestamp":"2018-07-02T03:16:39.965Z"}
+{"level":"info","message":"params: t_medical,FX,8","timestamp":"2018-07-02T03:16:39.965Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:39.965Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:39.965Z"}
+{"level":"info","message":"\u001b[0mGET /api/getSerial/1/FX \u001b[32m200 \u001b[0m5.765 ms - 45\u001b[0m\n","timestamp":"2018-07-02T03:16:39.967Z"}
+{"level":"info","message":"start transaction","timestamp":"2018-07-02T03:16:48.662Z"}
+{"level":"info","message":"end transaction","timestamp":"2018-07-02T03:16:48.662Z"}
+{"level":"info","message":"execute sql: select sequence_number, row_version from t_sequence where table_name = ? and prefix = ? and del_flag = false for update","timestamp":"2018-07-02T03:16:48.663Z"}
+{"level":"info","message":"params: t_medical,FY","timestamp":"2018-07-02T03:16:48.663Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:48.663Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:48.663Z"}
+{"level":"info","message":"execute sql: update t_sequence set sequence_number = sequence_number + 1, row_version = row_version + 1 where table_name = ? and prefix = ? and del_flag = false and row_version = ?","timestamp":"2018-07-02T03:16:48.664Z"}
+{"level":"info","message":"params: t_medical,FY","timestamp":"2018-07-02T03:16:48.665Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:16:48.665Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:16:48.665Z"}
+{"level":"info","message":"\u001b[0mGET /api/getSerial/1/FY \u001b[31m500 \u001b[0m6.304 ms - 63\u001b[0m\n","timestamp":"2018-07-02T03:16:48.668Z"}
+{"message":"ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1","stack":"Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1\n    at Query.Sequence._packetToError (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:52:14)\n    at Query.ErrorPacket (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:279:23)\n    at Parser.write (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\Connection.js:103:28)\n    at emitOne (events.js:116:13)\n    at Socket.emit (events.js:211:7)\n    at addChunk (_stream_readable.js:263:12)\n    at readableAddChunk (_stream_readable.js:250:11)\n    --------------------\n    at Protocol._enqueue (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:145:48)\n    at PoolConnection.query (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\Connection.js:208:25)\n    at executeSql (F:\\workspace_node\\xl-dashboard-backend\\dao\\dao.js:54:16)\n    at Query.sqlFuncArr.(anonymous function).bizCallback [as _callback] (F:\\workspace_node\\xl-dashboard-backend\\dao\\dao.js:94:21)\n    at Query.Sequence.end (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:88:24)\n    at Query._handleFinalResultPacket (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:139:8)\n    at Query.EofPacket (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:123:8)\n    at Protocol._parsePacket (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:279:23)\n    at Parser.write (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)","code":"ER_PARSE_ERROR","errno":1064,"sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1","sqlState":"42000","index":0,"sql":"update t_sequence set sequence_number = sequence_number + 1, row_version = row_version + 1 where table_name = 't_medical' and prefix = 'FY' and del_flag = false and row_version = ?","level":"error","timestamp":"2018-07-02T03:16:48.670Z"}
+{"level":"error","message":"doing rollback","timestamp":"2018-07-02T03:16:48.696Z"}
+{"level":"info","message":"start transaction","timestamp":"2018-07-02T03:45:22.653Z"}
+{"level":"info","message":"end transaction","timestamp":"2018-07-02T03:45:22.655Z"}
+{"level":"info","message":"execute sql: select sequence_number, row_version from t_sequence where table_name = ? and prefix = ? and del_flag = false for update","timestamp":"2018-07-02T03:45:22.657Z"}
+{"level":"info","message":"params: t_medical,FY","timestamp":"2018-07-02T03:45:22.658Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T03:45:22.658Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T03:45:22.658Z"}
+{"message":"没有该序列定义!","stack":"Error: 没有该序列定义!\n    at F:\\workspace_node\\xl-dashboard-backend\\service\\commonService.js:17:23\n    at bizCallback (F:\\workspace_node\\xl-dashboard-backend\\dao\\dao.js:157:18)\n    at Query.sqlFuncArr.(anonymous function).bizCallback [as _callback] (F:\\workspace_node\\xl-dashboard-backend\\dao\\dao.js:91:25)\n    at Query.Sequence.end (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:88:24)\n    at Query._handleFinalResultPacket (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:139:8)\n    at Query.EofPacket (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:123:8)\n    at Protocol._parsePacket (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:279:23)\n    at Parser.write (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:39:16)\n    at Socket.<anonymous> (F:\\workspace_node\\xl-dashboard-backend\\node_modules\\mysql\\lib\\Connection.js:103:28)","level":"error","timestamp":"2018-07-02T03:45:22.661Z"}
+{"level":"info","message":"\u001b[0mGET /api/getSerial/1/FY \u001b[31m500 \u001b[0m26.749 ms - 63\u001b[0m\n","timestamp":"2018-07-02T03:45:22.670Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T05:51:38.263Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T05:51:38.265Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:51:38.277Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T05:51:38.277Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T05:51:38.277Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:51:38.277Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:51:38.278Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:51:38.278Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T05:51:38.278Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m127.951 ms - 42\u001b[0m\n","timestamp":"2018-07-02T05:51:38.294Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.922 ms - 42\u001b[0m\n","timestamp":"2018-07-02T05:51:38.531Z"}
+{"level":"info","message":"\u001b[0mPOST /api/getDictionary \u001b[33m404 \u001b[0m0.853 ms - 50\u001b[0m\n","timestamp":"2018-07-02T05:51:38.533Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.644 ms - 42\u001b[0m\n","timestamp":"2018-07-02T05:53:44.847Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T05:53:48.235Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T05:53:48.235Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:53:50.850Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T05:53:50.850Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T05:53:50.851Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:53:50.851Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:53:50.851Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:53:50.851Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T05:53:50.852Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m3.547 ms - 86\u001b[0m\n","timestamp":"2018-07-02T05:57:56.557Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? del_flag = false","timestamp":"2018-07-02T05:58:07.244Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T05:58:07.245Z"}
+{"level":"info","message":"execute sql: select * from t_medicalwhere del_flag = false","timestamp":"2018-07-02T05:58:08.131Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T05:58:08.131Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T05:58:08.971Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T05:58:08.972Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T05:58:08.973Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T05:58:08.973Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T05:58:08.974Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:58:08.982Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? del_flag = false","timestamp":"2018-07-02T05:58:08.982Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T05:58:08.982Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:58:08.982Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:58:08.983Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:58:08.983Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T05:58:08.984Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:58:08.984Z"}
+{"level":"info","message":"execute sql: select * from t_medicalwhere del_flag = false","timestamp":"2018-07-02T05:58:08.985Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T05:58:08.985Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:58:08.985Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:58:08.985Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:58:08.985Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T05:58:08.985Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:58:08.990Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T05:58:08.990Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T05:58:08.991Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:58:08.991Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:58:08.991Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:58:08.991Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T05:58:08.991Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T05:59:18.458Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T05:59:18.461Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:59:18.471Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T05:59:18.472Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T05:59:18.472Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:59:18.472Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:59:18.473Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:59:18.473Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T05:59:18.473Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m44.325 ms - 42\u001b[0m\n","timestamp":"2018-07-02T05:59:18.487Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.927 ms - 42\u001b[0m\n","timestamp":"2018-07-02T05:59:18.585Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T05:59:18.591Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T05:59:18.591Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:59:18.592Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T05:59:18.593Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T05:59:18.593Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T05:59:18.593Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:59:18.593Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T05:59:18.593Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T05:59:18.593Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m4.952 ms - 86\u001b[0m\n","timestamp":"2018-07-02T06:00:13.672Z"}
+{"level":"info","message":"execute sql: select table_name, column_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T06:00:13.679Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T06:00:13.680Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:00:13.690Z"}
+{"level":"info","message":"execute sql: select table_name, column_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T06:00:13.690Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T06:00:13.690Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:00:13.690Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:00:13.691Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:00:13.691Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T06:00:13.691Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T06:00:59.477Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T06:00:59.479Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:00:59.490Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T06:00:59.490Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T06:00:59.491Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:00:59.491Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:00:59.491Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:00:59.491Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T06:00:59.492Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m49.332 ms - 42\u001b[0m\n","timestamp":"2018-07-02T06:00:59.506Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m1.000 ms - 42\u001b[0m\n","timestamp":"2018-07-02T06:00:59.569Z"}
+{"level":"info","message":"execute sql: select table_name, column_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T06:01:27.373Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T06:01:27.373Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:01:27.387Z"}
+{"level":"info","message":"execute sql: select table_name, column_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T06:01:27.387Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T06:01:27.387Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:01:27.387Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:01:27.387Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:01:27.387Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T06:01:27.387Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T06:01:27.388Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T06:01:56.801Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T06:01:56.803Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:01:56.816Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T06:01:56.817Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T06:01:56.817Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:01:56.817Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:01:56.818Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:01:56.818Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T06:01:56.818Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m72.501 ms - 42\u001b[0m\n","timestamp":"2018-07-02T06:01:56.834Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m1.055 ms - 42\u001b[0m\n","timestamp":"2018-07-02T06:01:56.896Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T06:02:04.898Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T06:02:04.898Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T06:02:56.332Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T06:02:56.335Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:02:56.347Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T06:02:56.347Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T06:02:56.347Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:02:56.348Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:02:56.348Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:02:56.348Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T06:02:56.349Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m60.574 ms - 42\u001b[0m\n","timestamp":"2018-07-02T06:02:56.364Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m1.204 ms - 42\u001b[0m\n","timestamp":"2018-07-02T06:02:56.421Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T06:02:56.427Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T06:02:56.428Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:02:56.429Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T06:02:56.430Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T06:02:56.430Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T06:02:56.430Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:02:56.430Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T06:02:56.430Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T06:02:56.430Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m18897.527 ms - 82\u001b[0m\n","timestamp":"2018-07-02T06:08:03.861Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:07:01.941Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:07:01.943Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:07:01.954Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:07:01.955Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:07:01.955Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:07:01.955Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:07:01.956Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:07:01.956Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:07:01.956Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m43.666 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:07:01.970Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m1.033 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:07:02.037Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:07:02.048Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:07:02.048Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:07:02.049Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:07:02.050Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:07:02.050Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:07:02.050Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:07:02.050Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:07:02.050Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:07:02.050Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m9411.974 ms - 82\u001b[0m\n","timestamp":"2018-07-02T07:07:13.458Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.493 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:07:27.816Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:07:27.820Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:07:27.820Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:07:27.821Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:07:27.821Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:07:27.821Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:07:27.821Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:07:27.821Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:07:27.822Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:07:27.822Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m23109.278 ms - 82\u001b[0m\n","timestamp":"2018-07-02T07:07:50.930Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.450 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:08:02.103Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:08:02.106Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:08:02.106Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:08:02.107Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:08:02.107Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:08:02.107Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:08:02.107Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:08:02.107Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:08:02.108Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:08:02.108Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m294516.968 ms - 82\u001b[0m\n","timestamp":"2018-07-02T07:12:56.621Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m4.620 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:16:17.951Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:16:17.959Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:16:17.959Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:16:17.969Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:16:17.969Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:16:17.969Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:16:17.970Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:16:17.970Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:16:17.970Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:16:17.971Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m56129.208 ms - 93\u001b[0m\n","timestamp":"2018-07-02T07:17:14.086Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m5.150 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:17:24.358Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:17:24.371Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:17:24.372Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:17:24.392Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:17:24.393Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:17:24.393Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:17:24.393Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:17:24.394Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:17:24.394Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:17:24.394Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m9.800 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:18:59.943Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:18:59.951Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:18:59.951Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:18:59.962Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:18:59.962Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:18:59.962Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:18:59.962Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:18:59.963Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:18:59.963Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:18:59.963Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m49211.650 ms - 93\u001b[0m\n","timestamp":"2018-07-02T07:19:49.160Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:20:56.642Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:20:56.642Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:20:56.643Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:20:56.643Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:20:56.644Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:20:56.644Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:20:56.644Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:20:56.644Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:20:56.644Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m37.675 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:20:56.648Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.824 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:20:56.713Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:20:56.718Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:20:56.719Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:20:56.720Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:20:56.720Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:20:56.720Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:20:56.720Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:20:56.720Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:20:56.720Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:20:56.721Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m4.209 ms - 93\u001b[0m\n","timestamp":"2018-07-02T07:20:56.723Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? del_flag = false","timestamp":"2018-07-02T07:27:26.011Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:27:26.011Z"}
+{"level":"info","message":"execute sql: select * from t_medicalwhere del_flag = false","timestamp":"2018-07-02T07:27:31.139Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:27:31.139Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T07:27:31.141Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T07:27:31.142Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:27:31.142Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? del_flag = false","timestamp":"2018-07-02T07:27:31.142Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:27:31.142Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:27:31.142Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:27:31.143Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:27:31.143Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:27:31.143Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m3.359 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:30:16.294Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? del_flag = false","timestamp":"2018-07-02T07:30:16.298Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:30:16.298Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:30:22.221Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:30:22.221Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:30:22.229Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:30:22.229Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T07:30:22.244Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T07:30:22.244Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T07:30:22.244Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:30:22.251Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? del_flag = false","timestamp":"2018-07-02T07:30:22.251Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:30:22.252Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:30:22.252Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:30:22.253Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:30:22.253Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:30:22.253Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:30:22.255Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:30:22.255Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:30:22.255Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:30:22.256Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:30:22.256Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:30:22.256Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:30:22.256Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:30:22.259Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:30:22.260Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:30:22.260Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:30:22.260Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:30:22.260Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:30:22.260Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:30:22.260Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m3.625 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:31:24.411Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:31:24.415Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:31:24.415Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:31:24.418Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:31:24.418Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:31:24.429Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:31:24.429Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:31:24.429Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:31:24.429Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:31:24.430Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:31:24.430Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:31:24.430Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:31:24.431Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:31:24.431Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:31:24.432Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:31:24.432Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:31:24.432Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:31:24.432Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:31:24.432Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m27820.294 ms - 4296\u001b[0m\n","timestamp":"2018-07-02T07:31:52.213Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m34541.457 ms - 40\u001b[0m\n","timestamp":"2018-07-02T07:31:58.939Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:32:05.408Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:32:05.408Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:32:05.409Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:32:05.410Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:32:05.410Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:32:05.410Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:32:05.410Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:32:05.410Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:32:05.410Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m31.452 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:32:05.414Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.834 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:32:05.495Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:32:07.888Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:32:07.888Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:32:07.889Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:32:07.889Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:32:07.889Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:32:07.889Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:32:07.890Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:32:07.890Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:32:07.890Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m2004.481 ms - 4296\u001b[0m\n","timestamp":"2018-07-02T07:32:09.893Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:32:09.895Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:32:09.896Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:32:09.897Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:32:09.897Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:32:09.897Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:32:09.897Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:32:09.897Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:32:09.897Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:32:09.898Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m570.194 ms - 40\u001b[0m\n","timestamp":"2018-07-02T07:32:10.466Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.443 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:35:04.347Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:35:04.349Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:35:04.350Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:35:04.350Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:35:04.350Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:35:04.350Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:35:04.351Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:35:04.352Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:35:04.352Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:35:04.352Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:35:04.352Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:35:04.352Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:35:04.352Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:35:04.353Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:35:04.353Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:35:04.353Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:35:04.353Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:35:04.354Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:35:04.354Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:35:04.354Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:35:04.354Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m5251.056 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:35:10.050Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m5703.788 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:35:10.051Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T07:35:10.053Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:35:10.053Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:35:10.054Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:35:10.054Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:35:10.054Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:35:10.054Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:35:10.054Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:35:10.054Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:38:40.615Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:38:40.615Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:38:40.616Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:38:40.616Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:38:40.618Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:38:40.618Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:38:40.618Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:38:40.618Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:38:40.618Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:38:40.618Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:38:40.618Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:38:40.619Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:38:40.620Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:38:40.620Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:38:40.620Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:38:40.620Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:38:40.620Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:38:40.620Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.485 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:38:40.621Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m1677.753 ms - 4296\u001b[0m\n","timestamp":"2018-07-02T07:38:43.967Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m4410.460 ms - 40\u001b[0m\n","timestamp":"2018-07-02T07:38:45.028Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:38:45.030Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:38:45.031Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:38:45.032Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:38:45.032Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:38:45.032Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:38:45.032Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:38:45.032Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:38:45.032Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:38:45.033Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m4.313 ms - 93\u001b[0m\n","timestamp":"2018-07-02T07:38:45.035Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:39:21.553Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:39:21.553Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:39:21.554Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:39:21.554Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.613 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:39:21.555Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:21.556Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:39:21.557Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:39:21.557Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:21.557Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:21.557Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:21.557Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:39:21.557Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:21.558Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:39:21.558Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:39:21.558Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:21.558Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:21.558Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:21.559Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:39:21.559Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m12.106 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:39:21.564Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:39:21.565Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:39:21.566Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m13.713 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:39:21.567Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:21.567Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:39:21.568Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:39:21.568Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:21.568Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:21.568Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:21.568Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:39:21.568Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[36m304 \u001b[0m9.930 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:39:21.570Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:39:51.933Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:39:51.933Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:39:51.934Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:39:51.934Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.467 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:39:51.935Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:51.936Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:39:51.936Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:39:51.936Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:51.936Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:51.936Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:51.936Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:39:51.937Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:51.937Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:39:51.937Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:39:51.937Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:51.938Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:51.938Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:51.938Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:39:51.938Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m11.813 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:39:51.944Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:39:51.946Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:39:51.946Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m13.915 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:39:51.947Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:51.947Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:39:51.947Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:39:51.947Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:39:51.947Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:51.948Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:39:51.948Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:39:51.948Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[36m304 \u001b[0m5.162 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:39:51.950Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m4.211 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:42:30.420Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m34.776 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:42:30.425Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m31.450 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:42:30.426Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m1.660 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:42:30.431Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.398 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:45:21.957Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m3.995 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:45:21.960Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m5.517 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:45:21.962Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[36m304 \u001b[0m1.275 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:45:21.964Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m1.256 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:46:24.661Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m2.783 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:46:24.662Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.276 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:46:24.664Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[36m304 \u001b[0m0.717 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:46:24.665Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m1.156 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:46:33.025Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m1.614 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:46:33.026Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m0.268 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:46:33.028Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:46:50.418Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:46:50.418Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:46:50.429Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:46:50.429Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:46:50.430Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:46:50.430Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:46:50.430Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:46:50.431Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:46:50.431Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m38.347 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:46:50.436Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.636 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:46:50.524Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:46:53.181Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:46:53.181Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m3.639 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:46:53.183Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:46:53.184Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:46:53.184Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:46:53.186Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:46:53.186Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:46:53.186Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:46:53.186Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:46:53.187Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:46:53.187Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:46:53.187Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m5.790 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:46:53.188Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m9.725 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:50:00.810Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m16.828 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:50:00.815Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m1.163 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:50:00.820Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m1.000 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:50:00.822Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:50:07.984Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:50:07.984Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:50:07.995Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:50:07.995Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:50:07.995Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:50:07.995Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:50:07.996Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:50:07.996Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:50:07.997Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m33.765 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:50:08.002Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.631 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:50:08.073Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:50:25.281Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:50:25.283Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m3.942 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:50:25.285Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:50:25.286Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:50:25.286Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:50:25.288Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:50:25.288Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:50:25.289Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:50:25.289Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:50:25.289Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:50:25.290Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:50:25.290Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m6.510 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:50:25.291Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m3.724 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:52:11.065Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m21.810 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:52:11.070Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m19.063 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:52:11.071Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[36m304 \u001b[0m12.553 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:52:11.074Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m86819.487 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:53:51.419Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m109170.261 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:54:13.771Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m638.098 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:54:14.411Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[0m- \u001b[0m- ms - -\u001b[0m\n","timestamp":"2018-07-02T07:54:14.414Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m11589.891 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:54:40.045Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m12130.180 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:54:40.586Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m639.076 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:54:41.226Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m517.944 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:54:41.745Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[32m200 \u001b[0m3.884 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:55:54.124Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m22.036 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:55:54.128Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m19.381 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:55:54.129Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m0.570 ms - 86\u001b[0m\n","timestamp":"2018-07-02T07:55:54.133Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:56:10.775Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:56:10.776Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:56:10.785Z"}
+{"level":"info","message":"execute sql: select user_id, user_pass from t_user where del_flag = false","timestamp":"2018-07-02T07:56:10.785Z"}
+{"level":"info","message":"params: heyu","timestamp":"2018-07-02T07:56:10.785Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:56:10.785Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:56:10.786Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:56:10.786Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:56:10.786Z"}
+{"level":"info","message":"\u001b[0mPOST /users/login \u001b[32m200 \u001b[0m33.498 ms - 42\u001b[0m\n","timestamp":"2018-07-02T07:56:10.790Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m1.017 ms - 50\u001b[0m\n","timestamp":"2018-07-02T07:56:10.848Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:56:13.381Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:56:13.381Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:56:13.382Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:56:13.383Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:56:13.383Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:56:13.384Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:56:13.384Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:56:13.384Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:56:13.384Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:56:13.384Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:56:13.384Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[32m200 \u001b[0m8.663 ms - 4334\u001b[0m\n","timestamp":"2018-07-02T07:56:13.389Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:56:13.390Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:56:13.390Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:56:13.390Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:56:13.390Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:56:13.391Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:56:13.391Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:56:13.391Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[32m200 \u001b[0m11.592 ms - 40\u001b[0m\n","timestamp":"2018-07-02T07:56:13.394Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:57:10.297Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:57:10.298Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:57:10.299Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:57:10.299Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:57:10.299Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:57:10.299Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:57:10.299Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:57:10.299Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:57:10.299Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:57:10.300Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:57:10.300Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:57:10.304Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:57:10.304Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:57:10.304Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:57:10.304Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:57:10.304Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:57:10.304Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:57:10.304Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m7.483 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:57:10.305Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m8.251 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:57:10.307Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.686 ms - 50\u001b[0m\n","timestamp":"2018-07-02T07:57:10.309Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:57:10.310Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:57:10.311Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:57:10.311Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:57:10.311Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:57:10.311Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:57:10.311Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:57:10.311Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:57:10.311Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:57:10.312Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[32m200 \u001b[0m3.031 ms - 93\u001b[0m\n","timestamp":"2018-07-02T07:57:10.313Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:58:24.668Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:58:24.668Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:58:24.670Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T07:58:24.670Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T07:58:24.670Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:58:24.670Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:58:24.670Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:58:24.670Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:58:24.670Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:58:24.671Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:58:24.671Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:58:24.675Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T07:58:24.675Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:58:24.675Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:58:24.675Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:58:24.675Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:58:24.675Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:58:24.675Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m0.907 ms - 50\u001b[0m\n","timestamp":"2018-07-02T07:58:24.675Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m6.923 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:58:24.676Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m8.726 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:58:24.677Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:58:24.678Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:58:24.678Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:58:24.678Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T07:58:24.678Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T07:58:24.679Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T07:58:24.679Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:58:24.679Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T07:58:24.679Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T07:58:24.679Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[36m304 \u001b[0m2.283 ms - -\u001b[0m\n","timestamp":"2018-07-02T07:58:24.680Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T08:01:03.544Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T08:01:03.544Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T08:01:03.545Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:03.545Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:03.547Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T08:01:03.547Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T08:01:03.547Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:03.547Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:03.547Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:03.547Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T08:01:03.547Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m1.405 ms - 50\u001b[0m\n","timestamp":"2018-07-02T08:01:03.548Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:03.548Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T08:01:03.548Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:03.548Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:03.549Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:03.549Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:03.549Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T08:01:03.549Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m8.985 ms - -\u001b[0m\n","timestamp":"2018-07-02T08:01:03.552Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T08:01:03.553Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:03.553Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m9.706 ms - -\u001b[0m\n","timestamp":"2018-07-02T08:01:03.554Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:03.554Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T08:01:03.554Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:03.554Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:03.554Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:03.555Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:03.555Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T08:01:03.555Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[36m304 \u001b[0m6.545 ms - -\u001b[0m\n","timestamp":"2018-07-02T08:01:03.556Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T08:01:35.408Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T08:01:35.408Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T08:01:35.408Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:35.408Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:35.409Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T08:01:35.409Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T08:01:35.409Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:35.409Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:35.409Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:35.409Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T08:01:35.409Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:35.410Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T08:01:35.410Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:35.410Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:35.411Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:35.411Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:35.411Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T08:01:35.411Z"}
+{"level":"info","message":"\u001b[0mPOST /users/checkLogin \u001b[33m404 \u001b[0m2.487 ms - 50\u001b[0m\n","timestamp":"2018-07-02T08:01:35.416Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m8.893 ms - -\u001b[0m\n","timestamp":"2018-07-02T08:01:35.416Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T08:01:35.417Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:35.418Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m9.990 ms - -\u001b[0m\n","timestamp":"2018-07-02T08:01:35.418Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:35.418Z"}
+{"level":"info","message":"execute sql: select concat(table_name, '-', column_name) as category_name, value, name from t_dictionary where del_flag = false","timestamp":"2018-07-02T08:01:35.418Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:35.418Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:35.418Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:35.419Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:35.419Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T08:01:35.419Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDictionary \u001b[36m304 \u001b[0m7.327 ms - -\u001b[0m\n","timestamp":"2018-07-02T08:01:35.420Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T08:01:44.582Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T08:01:44.582Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T08:01:44.582Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:44.582Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:44.582Z"}
+{"level":"info","message":"execute sql: select * from t_column_info where table_name = ? and del_flag = false","timestamp":"2018-07-02T08:01:44.582Z"}
+{"level":"info","message":"params: t_medical","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"execute sql: select * from t_medical where del_flag = false","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"params: ","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"start sql","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:44.583Z"}
+{"level":"info","message":"end sql","timestamp":"2018-07-02T08:01:44.584Z"}
+{"level":"info","message":"source released","timestamp":"2018-07-02T08:01:44.584Z"}
+{"level":"info","message":"\u001b[0mGET /api/getColumnInfo/1 \u001b[36m304 \u001b[0m6.538 ms - -\u001b[0m\n","timestamp":"2018-07-02T08:01:44.588Z"}
+{"level":"info","message":"\u001b[0mGET /api/getDataByType/1 \u001b[36m304 \u001b[0m7.367 ms - -\u001b[0m\n","timestamp":"2018-07-02T08:01:44.589Z"}

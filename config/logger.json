@@ -1,0 +1,4 @@
+{
+  "logFileDir": "./log",
+  "logFileName": "app.log"
+}
