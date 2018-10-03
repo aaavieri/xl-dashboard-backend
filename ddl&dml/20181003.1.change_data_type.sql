@@ -5,3 +5,5 @@ CHANGE COLUMN `sample_transport_condition` `sample_transport_condition` VARCHAR(
 ALTER TABLE `t_medical`
 CHANGE COLUMN `sample_requirement` `sample_requirement` VARCHAR(100) NOT NULL COMMENT '样本要求' ,
 CHANGE COLUMN `sample_transport_condition` `sample_transport_condition` VARCHAR(100) NOT NULL COMMENT '样本运输条件' ;
+UPDATE `t_healthy` SET sample_requirement = '', sample_transport_condition = '';
+UPDATE `t_medical` SET sample_requirement = '', sample_transport_condition = '';
