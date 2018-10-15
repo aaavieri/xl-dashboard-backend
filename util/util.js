@@ -86,6 +86,9 @@ exports.getTableName = function (dataType) {
         case '2':
             tableName = 't_healthy'
             break
+        case '3':
+            tableName = 't_mall_goods'
+            break
         default:
             tableName = 't_medical'
     }

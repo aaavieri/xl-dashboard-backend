@@ -215,4 +215,75 @@ router.get('/getSerial/:dataType/:prefix', function(req, res, next) {
     )
 });
 
+// added by yinjiaolong 20181012 for goods
+router.post('/updateGoods/:id', function(req, res, next) {
+    let id = req.params.id
+    let rowData = req.body.rowData
+    let sql = 'update t_mall_goods set '
+    let params = []
+    Object.keys(rowData).map(function (key) {
+        if (util.isUpdateColumn(key) && key != 'id') {
+            sql += util.humpToUnderLine(key) + ' = ?, '
+            params.push(rowData[key])
+        }
+    })
+    sql += 'update_time = sysdate(), row_version = row_version + 1 where id = ? and row_version = ?'
+    params.push(id, rowData.rowVersion)
+    dao.execute(new dao.update(sql, params, function (error, results) {
+        if (error) {
+            return next(error)
+        }
+        if (results === 0) {
+            res.json(util.getFailureData('更新失败，数据不是最新，请重新检索后再操作'))
+        } else {
+            res.json(util.getSuccessData(results))
+        }
+    }))
+});
+
+router.post('/deleteGoods/:serial', function(req, res, next) {
+    let id = req.params.id
+    let rowVersion = req.body.rowVersion
+    let sessionUser = req.session.userInfo.userId
+    let sql = 'update t_mall_goods set del_flag = true, update_time = sysdate(), update_user = ?, row_version = row_version + 1 where id = ? and row_version = ?'
+    let params = [sessionUser, id, rowVersion]
+    dao.execute(new dao.update(sql, params, function (error, results) {
+        if (error) {
+            return next(error)
+        }
+        if (results === 0) {
+            res.json(util.getFailureData('删除失败，数据不是最新，请重新检索后再操作'))
+        } else {
+            res.json(util.getSuccessData(results))
+        }
+    }))
+});
+
+router.post('/addGoods', function(req, res, next) {
+    let rowData = req.body.rowData
+    let sessionUser = req.session.userInfo.userId
+
+    let sql = 'insert into t_mall_goods (id, '
+    let insertValueSql = ' values (?, '
+    let params = [null]
+    Object.keys(rowData).map(function (key) {
+        if (util.isUpdateColumn(key) && key != 'id') {
+            sql += util.humpToUnderLine(key) + ', '
+            insertValueSql += '?, '
+            params.push(rowData[key])
+        }
+    })
+    sql += 'del_flag, create_time, create_user, update_time, update_user, row_version)'
+    insertValueSql += 'false, sysdate(), ?, sysdate(), ?, 1)'
+    params.push(sessionUser, sessionUser)
+
+    dao.execute(new dao.insert(sql + insertValueSql, params, function (error, results, others) {
+            if (error) {
+                return next(error)
+            }
+            res.json(util.getSuccessData(others.commonParams.sequenceNumber))
+        })
+    )
+});
+
 module.exports = router;
