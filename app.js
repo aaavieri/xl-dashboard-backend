@@ -8,6 +8,7 @@ var appLogger = require('./logger/appLogger')
 
 var apiRouter = require('./routes/api');
 var usersRouter = require('./routes/users');
+var fileRouter = require('./routes/file');
 
 var app = express();
 
@@ -39,6 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', apiRouter);
 app.use('/users', usersRouter);
+app.use('/file', fileRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

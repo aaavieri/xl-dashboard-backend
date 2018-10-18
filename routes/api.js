@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var dao = require('../dao/dao');
 var util = require('../util/util')
+var env = require('../config/env')
 
 router.use(util.loginChecker)
 router.get('/getDictionary', function(req, res, next) {
@@ -241,7 +242,7 @@ router.post('/updateGoods/:id', function(req, res, next) {
     }))
 });
 
-router.post('/deleteGoods/:serial', function(req, res, next) {
+router.post('/deleteGoods/:id', function(req, res, next) {
     let id = req.params.id
     let rowVersion = req.body.rowVersion
     let sessionUser = req.session.userInfo.userId
@@ -285,5 +286,24 @@ router.post('/addGoods', function(req, res, next) {
         })
     )
 });
+
+router.get('/getPictureList/:goodsId', function (req, res, next) {
+    let goodsId = req.params.goodsId
+    let sql = `select p.id, p.url, p.local_flag, p.row_version from t_mall_goods_picture gp inner join t_mall_picture p
+        on (gp.picture_id = p.id) where gp.goods_id = ? and gp.del_flag = false and p.del_flag = false`
+    dao.execute(new dao.selectList(sql, goodsId, function (error, results, fields) {
+        if (error) {
+            return next(error)
+        }
+        let pictureList = util.transferFromList(results, fields)
+        pictureList.map(function (picture) {
+            if (picture.localFlag == 1) {
+                picture.url = env.picPrefix + picture.url
+            }
+            return picture
+        })
+        res.json(util.getSuccessData(pictureList))
+    }))
+})
 
 module.exports = router;
