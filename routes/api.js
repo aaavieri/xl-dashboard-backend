@@ -4,6 +4,8 @@ var dao = require('../dao/dao');
 var util = require('../util/util')
 var env = require('../config/env')
 
+const fs = require("fs")
+
 router.use(util.loginChecker)
 router.get('/getDictionary', function(req, res, next) {
     dao.execute(new dao.selectList('select concat(table_name, \'-\', column_name) as category_name, column_name, value, name from t_dictionary where del_flag = false', [], function (error, results, fields) {
@@ -220,16 +222,17 @@ router.get('/getSerial/:dataType/:prefix', function(req, res, next) {
 router.post('/updateGoods/:id', function(req, res, next) {
     let id = req.params.id
     let rowData = req.body.rowData
-    let sql = 'update t_mall_goods set '
-    let params = []
-    Object.keys(rowData).map(function (key) {
-        if (util.isUpdateColumn(key) && key != 'id') {
-            sql += util.humpToUnderLine(key) + ' = ?, '
-            params.push(rowData[key])
-        }
-    })
-    sql += 'update_time = sysdate(), row_version = row_version + 1 where id = ? and row_version = ?'
-    params.push(id, rowData.rowVersion)
+    // let sql = 'update t_mall_goods set '
+    // let params = []
+    // Object.keys(rowData).map(function (key) {
+    //     if (util.isUpdateColumn(key) && key != 'id' && key != 'pictureList') {
+    //         sql += util.humpToUnderLine(key) + ' = ?, '
+    //         params.push(rowData[key])
+    //     }
+    // })
+    // sql += 'update_time = sysdate(), row_version = row_version + 1 where id = ? and row_version = ?'
+    // params.push(id, rowData.rowVersion)
+    let {sql, params} = getGoodsUpdateInfo(id, rowData)
     dao.execute(new dao.update(sql, params, function (error, results) {
         if (error) {
             return next(error)
@@ -289,7 +292,7 @@ router.post('/addGoods', function(req, res, next) {
 
 router.get('/getPictureList/:goodsId', function (req, res, next) {
     let goodsId = req.params.goodsId
-    let sql = `select p.id, p.url, p.local_flag, p.row_version from t_mall_goods_picture gp inner join t_mall_picture p
+    let sql = `select p.id, p.name, p.url, p.local_flag, p.row_version from t_mall_goods_picture gp inner join t_mall_picture p
         on (gp.picture_id = p.id) where gp.goods_id = ? and gp.del_flag = false and p.del_flag = false`
     dao.execute(new dao.selectList(sql, goodsId, function (error, results, fields) {
         if (error) {
@@ -306,4 +309,236 @@ router.get('/getPictureList/:goodsId', function (req, res, next) {
     }))
 })
 
+router.get('/getGoodsList', function(req, res, next) {
+    dao.executeTransaction({}, new dao.selectList('select * from t_mall_goods where del_flag = false', [], function (error, results, fields, others) {
+        if (error) {
+            return next(error)
+        }
+        others.commonParams.goodsList = util.transferFromList(results, fields)
+    }), new dao.selectList('select gp.goods_id, p.id, p.name, p.url, p.local_flag, p.row_version from t_mall_goods_picture gp inner join t_mall_picture p on (gp.picture_id = p.id)' +
+        ' where gp.del_flag = false and p.del_flag = false', [], function (error, results, fields, others) {
+        if (error) {
+            return next(error)
+        }
+        let pictureList = util.transferFromList(results, fields).map(picture => {
+            if (picture.localFlag == 1) {
+                picture.url = env.picPrefix + picture.url
+            }
+            return picture
+        })
+        let goodsList = others.commonParams.goodsList.map(goods => {
+            goods.pictureList = pictureList.filter(picture => picture.goodsId === goods.id)
+            return goods
+        })
+        res.json(util.getSuccessData(goodsList))
+    }))
+});
+
+// 暂时未使用
+router.post('/v2/updateGoods/:id', function(req, res, next) {
+    let id = req.params.id
+    let rowData = req.body.rowData
+    let sessionUser = req.session.userInfo.userId
+    // let sql = 'update t_mall_goods set '
+    // let params = []
+    // Object.keys(rowData).map(function (key) {
+    //     if (util.isUpdateColumn(key) && key != 'id' && key != 'pictureList') {
+    //         sql += util.humpToUnderLine(key) + ' = ?, '
+    //         params.push(rowData[key])
+    //     }
+    // })
+    // sql += 'update_time = sysdate(), row_version = row_version + 1 where id = ? and row_version = ?'
+    // params.push(id, rowData.rowVersion)
+    let {sql, params} = getGoodsUpdateInfo(id, rowData)
+    let insertPicSql = 'insert into t_mall_goods_picture (goods_id, picture_id, del_flag) (select 0 as goods_id, 0 as picture_id, false as del_flag from dual where false '
+    let insertPicParam = []
+    let updatePicSql = 'update t_mall_goods_picture gp set del_flag = true, update_time = sysdate(), update_user = ?, row_version = row_version + 1 '
+        + 'where not exists (select * from (select 0 as goods_id, 0 as picture_id, false as del_flag from dual where false '
+    let updatePicParam = [sessionUser]
+    let snippets = rowData.pictureList.map(picture => {
+        insertPicParam.push(id, picture.id)
+        updatePicParam.push(id, picture.id)
+        return 'select ? as goods_id, ? as picture_id, false as del_flag from dual'
+    })
+    if (snippets.length > 0) {
+        insertPicSql += `union all select * from (${snippets.join(' union all ')}) d
+        where not exists (select * from t_mall_goods_picture gp where d.goods_id = gp.goods_id and d.picture_id = gp.picture_id and gp.del_flag = false)`
+        updatePicSql += `union all ${snippets.join(' union all ')}`
+    }
+    insertPicSql += ')'
+    updatePicSql += ') d where d.goods_id = gp.goods_id and d.picture_id = gp.picture_id)'
+    dao.executeTransaction({}, new dao.update(sql, params, function (error, changeRows) {
+        if (error) {
+            return next(error)
+        }
+        if (changeRows === 0) {
+            throw new Error('更新失败，数据不是最新，请重新检索后再操作')
+        }
+    }), new dao.insert(insertPicSql, insertPicParam, function (error, insertIds, others) {
+        if (error) {
+            return next(error)
+        }
+    }), new dao.update(updatePicSql, updatePicParam, function (error, changeRows, others) {
+        if (error) {
+            return next(error)
+        }
+    }), new dao.update('update t_mall_picture p set del_flag = true, update_time = sysdate(), update_user = ?, row_version = row_version + 1 ' +
+        'where not exists (select * from t_mall_goods_picture gp where p.id = gp.picture_id and gp.del_flag = false) and p.del_flag = false', [sessionUser],
+        function (error, changeRows, others) {
+        if (error) {
+            return next(error)
+        }
+    }), new dao.selectList('select p.id, p.url, p.local_flag from t_mall_picture p inner join t_mall_goods_picture gp on ' +
+        '(p.id = gp.picture_id) where gp.goods_id = ? and gp.del_flag = true and p.del_flag = true', [id], function (error, results, fields, others) {
+        if (error) {
+            return next(error)
+        }
+        let deletePics = util.transferFromList(results, fields).filter(picture => picture.localFlag == 1)
+        deletePics.map(picture => {
+            if (fs.existsSync(env.picStorePath + picture.url)) {
+                fs.unlinkSync(env.picStorePath + picture.url)
+            }
+        })
+        res.json(util.getSuccessData({}))
+    }))
+});
+
+router.post('/v2/deleteGoods/:id', function(req, res, next) {
+    let id = req.params.id
+    let rowVersion = req.body.rowVersion
+    let sessionUser = req.session.userInfo.userId
+    let goodsSql = 'update t_mall_goods set del_flag = true, update_time = sysdate(), update_user = ?, row_version = row_version + 1 where id = ? and row_version = ?'
+    let pictureSql = 'update t_mall_goods_picture gp, t_mall_picture p set gp.del_flag = true, gp.update_time = sysdate(), gp.update_user = ?, gp.row_version = gp.row_version + 1, ' +
+        'p.del_flag = true, p.update_time = sysdate(), p.update_user = ?, p.row_version = p.row_version + 1  where gp.goods_id = ? and gp.picture_id = p.id'
+    let params = [sessionUser, id, rowVersion]
+    dao.executeTransaction({}, new dao.update(goodsSql, params, function (error, results) {
+        if (error) {
+            return next(error)
+        }
+        if (results === 0) {
+            throw new Error('删除失败，数据不是最新，请重新检索后再操作')
+        }
+    }), new dao.update(pictureSql, [sessionUser, sessionUser, id], function (error, results) {
+        if (error) {
+            return next(error)
+        }
+    }), new dao.selectList('select p.id, p.url, p.local_flag from t_mall_goods_picture gp, t_mall_picture p ' +
+        'where gp.goods_id = ? and gp.picture_id = p.id and gp.del_flag = true and p.del_flag = true', [id], function (error, results, fields) {
+        if (error) {
+            return next(error)
+        }
+        let deletePics = util.transferFromList(results, fields).filter(picture => picture.localFlag == 1)
+        deletePics.map(picture => {
+            if (fs.existsSync(env.picStorePath + picture.url)) {
+                fs.unlinkSync(env.picStorePath + picture.url)
+            }
+        })
+        res.json(util.getSuccessData({}))
+    }))
+});
+
+router.post('/v2/addGoods', function(req, res, next) {
+    let rowData = req.body.rowData
+    let sessionUser = req.session.userInfo.userId
+
+    let sql = 'insert into t_mall_goods (id, '
+    let insertValueSql = ' values (?, '
+    let params = [null]
+    Object.keys(rowData).map(function (key) {
+        if (util.isUpdateColumn(key) && key != 'id' && key != 'pictureList') {
+            sql += util.humpToUnderLine(key) + ', '
+            insertValueSql += '?, '
+            if (key == 'coverPicId' && rowData[key] == 0) {
+                params.push(null)
+            } else {
+                params.push(rowData[key])
+            }
+        }
+    })
+    sql += 'del_flag, create_time, create_user, update_time, update_user, row_version)'
+    insertValueSql += 'false, sysdate(), ?, sysdate(), ?, 1)'
+    params.push(sessionUser, sessionUser)
+
+    let insertPicSql = 'insert into t_mall_goods_picture (goods_id, picture_id, del_flag) (select 0 as goods_id, 0 as picture_id, false as del_flag from dual where false '
+    let snippets = rowData.pictureList.map(picture => {
+        return 'select ? as goods_id, ? as picture_id, false as del_flag from dual'
+    })
+    if (snippets.length > 0) {
+        insertPicSql += `union all select * from (${snippets.join(' union all ')}) d 
+        where not exists (select * from t_mall_goods_picture gp where d.goods_id = gp.goods_id 
+        and d.picture_id = gp.picture_id and gp.del_flag = false)`
+    }
+    insertPicSql += ')'
+    dao.executeTransaction({}, new dao.insert(sql + insertValueSql, params, function (error, insertId, others) {
+        if (error) {
+            return next(error)
+        }
+        others.commonParams.id = insertId
+        rowData.pictureList.map(picture => {
+            others.next.params.push(...[insertId, picture.id])
+        })
+    }), new dao.insert(insertPicSql, [], function (error, insertIds, others) {
+        if (error) {
+            return next(error)
+        }
+        res.json(util.getSuccessData(others.commonParams.id))
+    }))
+});
+
+// 删除无用的图片
+router.post('/deleteSurplusPictures', function (req, res, next) {
+    let sessionUser = req.session.userInfo.userId
+    dao.executeTransaction({}, new dao.selectList('select p.id, p.url, p.local_flag from t_mall_picture p left join t_mall_goods_picture gp' +
+        ' on (p.id = gp.picture_id) where p.del_flag <> gp.del_flag or gp.del_flag is null', [], function (error, results, fields, others) {
+        if (error) {
+            return next(error)
+        }
+        let deletePics = util.transferFromList(results, fields)
+        let deleteIds = deletePics.map(picture => picture.id)
+        others.next.params.push(sessionUser, -1, ...deleteIds)
+        others.next.statement = `update t_mall_picture p set p.del_flag = true, p.update_time = sysdate(), p.update_user = ?, p.row_version = p.row_version + 1 
+        where p.id in (${new Array(deleteIds.length + 1).fill('?').join(',')}) and p.del_flag = false`
+        others.commonParams.deleteInfo = {
+            deletePics,
+            deleteIds
+        }
+    }), new dao.update('', [], function (error, results, others) {
+        if (error) {
+            return next(error)
+        }
+        let {deleteIds} = others.commonParams.deleteInfo
+        others.next.params.push(sessionUser, -1, ...deleteIds)
+        others.next.statement = `update t_mall_goods_picture gp set gp.del_flag = true, gp.update_time = sysdate(), gp.update_user = ?, gp.row_version = gp.row_version + 1 
+        where gp.picture_id in (${new Array(deleteIds.length + 1).fill('?').join(',')}) and gp.del_flag = false`
+    }), new dao.update('', [], function (error, results, others) {
+        if (error) {
+            return next(error)
+        }
+        let {deletePics} = others.commonParams.deleteInfo
+        deletePics.filter(picture => picture.localFlag == 1).map(picture => {
+            if (fs.existsSync(env.picStorePath + picture.url)) {
+                fs.unlinkSync(env.picStorePath + picture.url)
+            }
+        })
+        res.json(util.getSuccessData({}))
+    }))
+})
+
+function getGoodsUpdateInfo (id, rowData) {
+    let sql = 'update t_mall_goods set '
+    let params = []
+    Object.keys(rowData).map(function (key) {
+        if (util.isUpdateColumn(key) && key != 'id' && key != 'pictureList') {
+            sql += util.humpToUnderLine(key) + ' = ?, '
+            if (key == 'coverPicId' && rowData[key] == 0) {
+                params.push(null)
+            } else {
+                params.push(rowData[key])
+            }
+        }
+    })
+    sql += 'update_time = sysdate(), row_version = row_version + 1 where id = ? and row_version = ?'
+    params.push(id, rowData.rowVersion)
+    return {sql, params}
+}
 module.exports = router;

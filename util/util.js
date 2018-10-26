@@ -1,4 +1,6 @@
 var crypto = require('crypto')
+const fs = require('fs')
+const path = require('path')
 
 const systemArr = ['delFlag', 'createTime', 'createUser', 'updateTime', 'updateUser', 'rowVersion']
 
@@ -107,4 +109,11 @@ exports.isUpdateColumn = function (columnName) {
     return systemArr.filter(function (value) {
         return value === columnName
     }).length == 0
+}
+
+exports.mkdirsSync = function (dirpath) {
+    if (!fs.existsSync(path.dirname(dirpath))) {
+        this.mkdirsSync(path.dirname(dirpath))
+    }
+    fs.mkdirSync(dirpath)
 }

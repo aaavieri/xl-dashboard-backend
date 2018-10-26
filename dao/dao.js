@@ -211,14 +211,14 @@ var insertFunc = function (statement, params, callback) {
 var updateFunc = function (statement, params, callback) {
     baseFunc.apply(this, arguments)
     this.bizCallback = function(error, results, fields, others) {
-        callback.apply(null, [error, results.changedRows, others])
+        callback.apply(null, [error, results ? results.changedRows : 0, others])
     }
 }
 
 var deleteFunc = function (statement, params, callback) {
     baseFunc.apply(this, arguments)
     this.bizCallback = function(error, results, fields, others) {
-        callback.apply(null, [error, results.affectedRows, others])
+        callback.apply(null, [error, results ? results.affectedRows : 0, others])
     }
 }
 

@@ -8,6 +8,10 @@ var appLog = require('../logger/appLogger')
 const multer = require("multer")
 const fs = require("fs")
 
+if (!fs.existsSync(env.picStorePath)) {
+    util.mkdirsSync(env.picStorePath)
+}
+
 var storage = multer.diskStorage({
     destination: function (req, file, cb){
         // 文件上传成功后会放入public下的upload文件夹
@@ -27,8 +31,8 @@ var upload = multer({
 router.post('/uploadMallPic/:goodsId', upload.single('file'), function (req, res, next) {
     appLog.info(`${req.file.originalname} uploaded`)
     let goodsId = req.params.goodsId
-    dao.executeTransaction({}, new dao.insert('insert into t_mall_picture (url, local_flag, del_flag) values (?, true, false)',
-        [req.file.saveName], function (error, insertId, others) {
+    dao.executeTransaction({}, new dao.insert('insert into t_mall_picture (name, url, local_flag, del_flag) values (?, ?, true, false)',
+        [req.file.originalname, req.file.saveName], function (error, insertId, others) {
         if (error) {
             return next(error)
         }
@@ -82,6 +86,43 @@ router.post('/deleteMallPic/:goodsId', function (req, res, next) {
             fs.unlinkSync(env.picStorePath + others.commonParams.rowData.url)
         }
         res.json(util.getSuccessData({}))
+    }))
+})
+
+// 暂时未使用
+router.post('/uploadMallPicList', upload.any(), function (req, res, next) {
+    let insetFunList = req.files.map(file => {
+        return new dao.insert('insert into t_mall_picture (name, url, local_flag, del_flag) values (?, ?, true, false)',
+            [file.originalname, file.saveName], function (error, insertId, others) {
+                if (error) {
+                    return next(error)
+                }
+                others.commonParams.pictureList.push({
+                    id: insertId,
+                    url: env.picPrefix + file.saveName,
+                    rowVersion: 1
+                })
+                if (others.commonParams.pictureList.length === req.files.length) {
+                    res.json(util.getSuccessData(others.commonParams.pictureList))
+                }
+            })
+    })
+    dao.executeTransaction({pictureList: []}, ...insetFunList)
+})
+
+// attempt to use this function
+router.post('/uploadSingleMallPic', upload.single('file'), function (req, res, next) {
+    dao.execute(new dao.insert('insert into t_mall_picture (name, url, local_flag, del_flag) values (?, ?, true, false)',
+        [req.file.originalname, req.file.saveName], function (error, insertId) {
+       if (error) {
+           return next(error)
+       }
+       res.json(util.getSuccessData({
+           id: insertId,
+           name: req.file.originalname,
+           url: env.picPrefix + req.file.saveName,
+           rowVersion: 1
+       }))
     }))
 })
 
