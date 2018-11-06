@@ -11,10 +11,10 @@ const fs = require("fs")
 router.use(util.loginChecker)
 router.get('/getDictionary', function(req, res, next) {
     dao.execute(new dao.selectList(`select concat(d.table_name, '-', d.column_name) as category_name, d.table_name, d.column_name, d.value, d.name, d.display_order, d.del_flag,
-        c.COLUMN_COMMENT as column_comment, C.ORDINAL_POSITION as ordinal_position, t.TABLE_COMMENT as table_comment from t_dictionary d inner join information_schema.COLUMNS c 
+        c.COLUMN_COMMENT as column_comment, c.ORDINAL_POSITION as ordinal_position, t.TABLE_COMMENT as table_comment from t_dictionary d inner join information_schema.COLUMNS c 
         on (c.TABLE_SCHEMA = '${dbInfo.database}' and d.table_name = c.TABLE_NAME and d.column_name = c.COLUMN_NAME)
         inner join information_schema.TABLES t on (t.TABLE_SCHEMA = '${dbInfo.database}' and d.table_name = t.TABLE_NAME)
-        where d.del_flag = false order by d.table_name, C.ORDINAL_POSITION, d.display_order`, [], function (error, results, fields) {
+        where d.del_flag = false order by d.table_name, c.ORDINAL_POSITION, d.display_order`, [], function (error, results, fields) {
         if (error) {
             return next(error)
         }
