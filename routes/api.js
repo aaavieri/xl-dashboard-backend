@@ -4,11 +4,17 @@ var dao = require('../dao/dao');
 var util = require('../util/util')
 var env = require('../config/env')
 
+const dbInfo = require('../config/dbConnection')
+
 const fs = require("fs")
 
 router.use(util.loginChecker)
 router.get('/getDictionary', function(req, res, next) {
-    dao.execute(new dao.selectList('select concat(table_name, \'-\', column_name) as category_name, column_name, value, name from t_dictionary where del_flag = false', [], function (error, results, fields) {
+    dao.execute(new dao.selectList(`select concat(d.table_name, '-', d.column_name) as category_name, d.table_name, d.column_name, d.value, d.name, d.display_order, d.del_flag,
+        c.COLUMN_COMMENT as column_comment, C.ORDINAL_POSITION as ordinal_position, t.TABLE_COMMENT as table_comment from t_dictionary d inner join information_schema.COLUMNS c 
+        on (c.TABLE_SCHEMA = '${dbInfo.database}' and d.table_name = c.TABLE_NAME and d.column_name = c.COLUMN_NAME)
+        inner join information_schema.TABLES t on (t.TABLE_SCHEMA = '${dbInfo.database}' and d.table_name = t.TABLE_NAME)
+        where d.del_flag = false order by d.table_name, C.ORDINAL_POSITION, d.display_order`, [], function (error, results, fields) {
         if (error) {
             return next(error)
         }
@@ -28,7 +34,8 @@ router.get('/getDictionary', function(req, res, next) {
                 return
             }
             retData[key] = retData[key].sort(function (item1, item2) {
-                return item1.value - item2.value
+                let displaySort = item1.displayOrder - item2.displayOrder
+                return displaySort !== 0 ? displaySort : (item1.value - item2.value)
             })
         })
         res.json(util.getSuccessData(retData))
@@ -36,14 +43,15 @@ router.get('/getDictionary', function(req, res, next) {
 });
 
 router.post('/addDictionary/:dataType/:type/:value', function(req, res, next) {
-    var dataType = req.params.dataType
-    var tableName = util.getTableName(dataType)
-    var type = req.params.type
-    var value = req.params.value
-    var name = req.body.name
-    var sessionUser = req.session.userInfo.userId
-    dao.execute(new dao.insert('insert into t_dictionary values (?, ?, ?, ?, 0, sysdate(), ?, sysdate(), ?, 1)',
-        [tableName, type, value, name, sessionUser, sessionUser], function (error, results) {
+    let dataType = req.params.dataType
+    let tableName = util.getTableName(dataType)
+    let type = req.params.type
+    let value = req.params.value
+    let name = req.body.name
+    let displayOrder = req.body.displayOrder || 0
+    let sessionUser = req.session.userInfo.userId
+    dao.execute(new dao.insert('insert into t_dictionary values (?, ?, ?, ?, ?, 0, sysdate(), ?, sysdate(), ?, 1)',
+        [tableName, type, value, name, displayOrder, sessionUser, sessionUser], function (error, results) {
         if (error) {
             return next(error)
         }
@@ -522,6 +530,41 @@ router.post('/deleteSurplusPictures', function (req, res, next) {
         })
         res.json(util.getSuccessData({}))
     }))
+})
+
+router.post('/updateDictionary', function (req, res, next) {
+    let needSaveData = req.body.needSaveData
+    let sessionUser = req.session.userInfo.userId
+    let sqlFuncs = []
+    needSaveData.map(item => {
+        let itemSqlFuncs = item.updateDataList.map(data => {
+            if (data.isInDb) {
+                return new dao.update('update t_dictionary set name = ?, display_order = ?, del_flag = ?, update_time = sysdate(), update_user = ?, row_version = row_version + 1' +
+                    ' where table_name = ? and column_name = ? and value = ? and del_flag = false',
+                [data.editName, data.editDisplayOrder, data.delFlag, sessionUser, item.tableName, item.columnName, data.value], function (error, changeRows, others) {
+                    if (error) {
+                        return next(error)
+                    }
+                })
+            } else {
+                return new dao.insert('insert into t_dictionary (table_name, column_name, value, name, display_order, del_flag, create_time, create_user, update_time, update_user, row_version)' +
+                    ' values (?, ?, ?, ?, ?, 0, sysdate(), ?, sysdate(), ?, 1)',
+                [item.tableName, item.columnName, data.value, data.editName, data.editDisplayOrder, sessionUser, sessionUser], function (error, insertId, others) {
+                    if (error) {
+                        return next(error)
+                    }
+                })
+            }
+        })
+        sqlFuncs.push(...itemSqlFuncs)
+    })
+    sqlFuncs.push(new dao.delete('delete from t_dictionary where del_flag = true', [], function (error) {
+        if (error) {
+            return next(error)
+        }
+        res.json(util.getSuccessData({}))
+    }))
+    dao.executeTransaction({}, ...sqlFuncs)
 })
 
 function getGoodsUpdateInfo (id, rowData) {

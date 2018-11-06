@@ -186,39 +186,44 @@ var baseFunc = function (statement, params, callback) {
 
 var selectOneFunc = function (statement, params, callback) {
     baseFunc.apply(this, arguments)
+    let func = this
     this.bizCallback = function(error, results, fields, others) {
         if (!error && results.length > 1) {
             error = new Error('too many results but expect one')
         }
-        callback.apply(null, [error, results.length == 0 ? null : results[0], fields, others])
+        func.callback.apply(null, [error, results.length == 0 ? null : results[0], fields, others])
     }
 }
 
 var selectListFunc = function (statement, params, callback) {
     baseFunc.apply(this, arguments)
+    let func = this
     this.bizCallback = function(error, results, fields, others) {
-        callback.apply(null, [error, results, fields, others])
+        func.callback.apply(null, [error, results, fields, others])
     }
 }
 
 var insertFunc = function (statement, params, callback) {
     baseFunc.apply(this, arguments)
+    let func = this
     this.bizCallback = function(error, results, fields, others) {
-        callback.apply(null, [error, results ? results.insertId : null, others])
+        func.callback.apply(null, [error, results ? results.insertId : null, others])
     }
 }
 
 var updateFunc = function (statement, params, callback) {
     baseFunc.apply(this, arguments)
+    let func = this
     this.bizCallback = function(error, results, fields, others) {
-        callback.apply(null, [error, results ? results.changedRows : 0, others])
+        func.callback.apply(null, [error, results ? results.changedRows : 0, others])
     }
 }
 
 var deleteFunc = function (statement, params, callback) {
     baseFunc.apply(this, arguments)
+    let func = this
     this.bizCallback = function(error, results, fields, others) {
-        callback.apply(null, [error, results ? results.affectedRows : 0, others])
+        func.callback.apply(null, [error, results ? results.affectedRows : 0, others])
     }
 }
 
