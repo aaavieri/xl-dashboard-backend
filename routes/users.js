@@ -7,7 +7,7 @@ var util = require('../util/util')
 router.post('/login', function(req, res, next) {
     var userId = req.body.userId
     var password = req.body.password
-    dao.execute(new dao.selectOne('select user_id, user_pass from t_user where del_flag = false', [userId], function (error, result, fields) {
+    dao.execute(new dao.selectOne('select user_id, user_pass from t_user where user_id = ? and del_flag = false', [userId], function (error, result, fields) {
         if (error) {
             return next(error)
         }
